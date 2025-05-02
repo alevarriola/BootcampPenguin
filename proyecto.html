@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta un monstruo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[url('/fondo-monstruo.jpeg')] bg-no-repeat bg-bottom bg-indigo-100 bg-cover bg-fixed"">
+    <!-- Encabezado de la pagina -->
+    <header class="bg-indigo-300 p-4">
+        <nav class="max-w-8xl mx-auto flex justify-between items-center">
+
+            <ul class="flex space-x-4">
+                <li><a href="#">AdoptingMonster</a></li>
+                <li><img src="./la-boca-abierta.png" height="50" width="50" alt="Boquita"></li>
+            </ul>
+
+
+            <ul class="flex space-x-4">
+                <li><a class="hover:text-gray-500" href="#">Nuestros opciones de monstruitos</a></li>
+                <li><a class="hover:text-gray-500" href="#">Contactoggrrrrs</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <h1 class="block bg-indigo-600 mb-1 font-bold p-4 text-4xl">Elije a tu proximo amigo!</h1>
+
+
+          <details class="mb-4 bg-indigo-100 p-4 rounded">
+            <summary class="cursor-pointer font-bold text-lg">
+                🐲 ¿Que tipo de monstruito te gustaría llevar a casa?
+            </summary>
+            <select name="monstruo" class="w-full p-2 border rounded" required>
+                <option value="gloton"> Un glotón con tres bocas y cero modales</option>
+                <option value="dragon"> Un dragón del tamaño de una tostadora</option>
+                <option value="fantasma"> Un fantasma que ronca fuerte</option>
+                <option value="slime"> Un slime que cambia de color según el humor</option>
+              </select>
+          </details>
+
+
+          <details class="mb-4 bg-indigo-100 p-4 rounded">
+            <summary class="cursor-pointer font-bold text-lg">
+                🍕 ¿Qué manjar hace rugir su pancita?
+            </summary>
+            <select name="comida" class="w-full p-2 border rounded" required>
+                <option value="calcetines"> Calcetines sucios</option>
+                <option value="pizza"> Pizza con clavos</option>
+                <option value="gatos"> Ruidos de gatos</option>
+                <option value="galletas"> Galletas con lágrimas humanas</option>
+              </select>
+          </details>
+
+
+          <details class="mb-4 bg-indigo-100 p-4 rounded">
+            <summary class="cursor-pointer font-bold text-lg">
+                😈 ¿Cómo se porta tu monstruo en días lluviosos?
+            </summary>
+            <select name="comportamiento" class="w-full p-2 border rounded">
+                <option value="bailar"> Se pone a bailar salsa sobre el techo</option>
+                <option value="llorar"> Llora y se derrite (¡literalmente!)</option>
+                <option value="invisible"> Se vuelve invisible y hace travesuras</option>
+                <option value="acurrucar"> Se acurruca y canta ópera</option>
+              </select>
+          </details>
+
+
+          <details class="mb-4 bg-indigo-100 p-4 rounded">
+            <summary class="cursor-pointer font-bold text-lg">
+                ⚠️ ¿Qué advertencia estás dispuesto a ignorar con tal de adoptarlo?
+            </summary>
+            <select name="advertencia" class="w-full p-2 border rounded">
+                <option value="ruidos"> Ruidos raros a las 3 a.m.</option>
+                <option value="huesos"> colección de huesos que no son suyos.</option>
+                <option value="telepatia"> telepatía pasivo-agresiva.</option>
+                <option value="banana"> explota si ve un plátano.</option>
+              </select>
+          </details>
+
+
+          <button class="bg-indigo-600 px-4 py-2 rounded shadow text-white font-bold hover:bg-indigo-400" type="submit">
+            Buscar amigo
+        </button>
+
+    </main>
+
+</body>
+</html>
